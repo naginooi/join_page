@@ -23,4 +23,24 @@ const thirdPhone = () => {
 const makeToken = () => {
   const token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
   document.querySelector(".token").innerText = token;
+  document.querySelector(".sendBtn").setAttribute("disabled", "true");
+  document.querySelector(".completeBtn").removeAttribute("disabled");
+  fnTimer();
 };
+let interval;
+const fnTimer = () => {
+  let timer = 10;
+  interval = setInterval(() => {
+    if (timer >= 0) {
+      const min = Math.floor(timer / 60);
+      const sec = timer % 60;
+      document.querySelector(
+        "timer"
+      ).innerText = `${min}:String(${sec}).padStart(2,"0")`;
+      timer--;
+    } else {
+    }
+  }, 1000);
+};
+
+//////////////////////////////////////////////////////////////
