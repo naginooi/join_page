@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="final.css" />
+    <script src="final.js"></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="final.css">
-  <script src="final.js"></script>
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container">
-    <h2>회원가입</h2>
-    <div class="info-input">
-      <input type="email" class="email" placeholder="이메일을 입력해 주세요.">
-      <input type="text" class="name" placeholder="이름을 입력해 주세요.">
-      <input type="password" class="password" placeholder="비밀번호를 입력해 주세요.">
-      <input type="password" class="re-password" placeholder="비밀번호를 다시 입력해 주세요.">
-    </div>
-    <div class="phone-input">
-      <input type="text" size="7"> -
-      <input type="text" size="7"> -
-      <input type="text" size="7">
-    </div>
-    <div class="certificate">
-      <div class="send">
-        <span class="token">000000</span>
-        <button disabled class="sendBtn">인증번호 전송</button>
+  <body>
+    <div class="container">
+      <h2>회원가입</h2>
+      <div class="info-input">
+        <input
+          type="email"
+          class="email"
+          placeholder="이메일을 입력해 주세요."
+        />
+        <input type="text" class="name" placeholder="이름을 입력해 주세요." />
+        <input
+          type="password"
+          class="password"
+          placeholder="비밀번호를 입력해 주세요."
+        />
+        <input
+          type="password"
+          class="re-password"
+          placeholder="비밀번호를 다시 입력해 주세요."
+        />
       </div>
-      <div class="complete">
-        <span class="timer">2:23</span>
-        <button class="completeBtn" disabled>인증 완료</button>
+      <div class="phone-input">
+        <input
+          id="first-input"
+          type="text"
+          size="7"
+          maxlength="3"
+          onchange="firstPhone()"
+          onkeyup="onchange()"
+        />
+        -
+        <input
+          id="second-input"
+          type="text"
+          size="7"
+          maxlength="4"
+          onchange="secondPhone()"
+          onkeyup="onchange()"
+        />
+        -
+        <input
+          id="third-input"
+          type="text"
+          size="7"
+          maxlength="4"
+          onchange="thirdPhone()"
+          onkeyup="onchange()"
+        />
       </div>
+      <div class="certificate">
+        <div class="send">
+          <span class="token">000000</span>
+          <button disabled class="sendBtn">인증번호 전송</button>
+        </div>
+        <div class="complete">
+          <span class="timer">2:23</span>
+          <button class="completeBtn" disabled>인증 완료</button>
+        </div>
+      </div>
+      <select class="region" name="region">
+        <option value="none" selected disabled>지역을 선택하세요</option>
+        <option value="seoul">서울</option>
+        <option value="incheon">인천</option>
+        <option value="kyeongki">경기</option>
+      </select>
+      <div class="gender-wrapper">
+        <input type="radio" name="gender" value="female" />
+        <label>여성</label>
+        <input type="radio" name="gender" value="male" />
+        <label>남성</label>
+      </div>
+      <button disabled class="register">가입하기</button>
     </div>
-    <select class="region" name="region">
-      <option value="none" selected disabled>지역을 선택하세요</option>
-      <option value="seoul">서울</option>
-      <option value="incheon">인천</option>
-      <option value="kyeongki">경기</option>
-    </select>
-    <div class="gender-wrapper">
-      <input type="radio" name="gender" value="female">
-      <label>여성</label>
-      <input type="radio" name="gender" value="male">
-      <label>남성</label>
-    </div>
-    <button disabled class="register">가입하기</button>
-  </div>
-</body>
-
+  </body>
 </html>
