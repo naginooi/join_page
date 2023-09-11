@@ -13,6 +13,10 @@
   border-radius: 5px;
   box-shadow: 4px 4px 15px #aacdff;
 
+  button:disabled {
+    background-color: #797979;
+  }
+
   h2 {
     margin-bottom: 30px;
     color: #0068ff;
