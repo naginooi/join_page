@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  padding: 100px;
+  width: 540px;
+  border: 1px solid #aacdff;
+  border-radius: 5px;
+  box-shadow: 4px 4px 15px #aacdff;
+}
+.container h2 {
+  margin-bottom: 30px;
+  color: #0068ff;
+}
+.container .info-input {
+  display: flex;
+  flex-direction: column;
+}
+.container .info-input input {
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+.container .phone-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .phone-input input {
+  padding: 8px 10px;
+}
+.container input,
+.container select {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+}
+.container input:focus,
+.container select:focus {
+  outline: none;
+  border-color: #0068ff;
+}
+.container .certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.container .certificate button {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.container .certificate .sendBtn {
+  border: 1px solid #d2d2d2;
+  color: #0068ff;
+}
+.container .certificate .completeBtn {
+  border: 1px solid #0068ff;
+  color: #fff;
+  background-color: #0068ff;
+}
+.container .certificate span {
+  color: #0068ff;
+}
+.container .region {
+  padding: 15px 10px;
+  color: #797979;
+  margin: 15px 0;
+}
+.container .gender-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.container .gender-wrapper label {
+  margin: 5px;
+}
+.container .register {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 20px 20px;
+  border: 1px solid #0068ff;
+  border-radius: 5px;
+  color: #0068ff;
+  background-color: #fff;
+}/*# sourceMappingURL=final.css.map */
