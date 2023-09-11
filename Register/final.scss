@@ -13,18 +13,22 @@
   border-radius: 5px;
   box-shadow: 4px 4px 15px #aacdff;
 
+
   h2 {
     margin-bottom: 30px;
     color: #0068ff;
   }
+
   .info-input {
     display: flex;
     flex-direction: column;
+
     input {
       padding: 15px 10px;
       margin-bottom: 15px;
     }
   }
+
   .phone-input {
     display: flex;
     justify-content: space-between;
@@ -34,19 +38,23 @@
       padding: 8px 10px;
     }
   }
+
   input,
   select {
     border: 1px solid #d2d2d2;
     border-radius: 5px;
+
     &:focus {
       outline: none;
       border-color: #0068ff;
     }
   }
+
   .certificate {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     button {
       cursor: pointer;
       width: 120px;
@@ -55,31 +63,43 @@
       margin-left: 10px;
       border-radius: 5px;
       background-color: #fff;
+
+      &:disabled {
+        border: 1px solid lightgray;
+        color: #e6e6e6;
+        background-color: lightgray;
+      }
     }
+
     .sendBtn {
       border: 1px solid #d2d2d2;
       color: #0068ff;
     }
+
     .completeBtn {
       border: 1px solid #0068ff;
       color: #fff;
       background-color: #0068ff;
     }
+
     span {
       color: #0068ff;
     }
   }
+
   .region {
     padding: 15px 10px;
     color: #797979;
     margin: 15px 0;
   }
+
   .gender-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
     border-bottom: 1px solid #e6e6e6;
+
     label {
       margin: 5px;
     }
@@ -93,5 +113,11 @@
     border-radius: 5px;
     color: #0068ff;
     background-color: #fff;
+
+    &:disabled {
+      border: 1px solid lightgray;
+      color: #e6e6e6;
+      background-color: lightgray;
+    }
   }
 }
