@@ -67,6 +67,34 @@ const signUp = () => {
   const man = document.querySelector('.male').checked;
 
   let isValid = true;
-  if (email.includes('@') === false || email == '')
+  if (email.includes('@') === false || email == '') {
     document.getElementById('email_error').innerText = '이메일이 올바르지 않습니다';
+    isValid = false;
+  } else document.getElementById('email_error').innerText = '';
+
+  if (name == '') {
+    document.getElementById('name_error').innerText = '이름을 입력해주세요';
+    isValid = false;
+  } else document.getElementById('name_error').innerText = '';
+
+  if (password == '') {
+    document.getElementById('pw_error').innerText = '비밀번호를 입력해주세요';
+    isValid = false;
+  } else document.getElementById('pw_error').innerText = '';
+  if (rePassword == '' || rePassword !== password) {
+    document.getElementById('re_pw_error').innerText = '비밀번호가 올바르지 않습니다';
+    isValid = false;
+  } else document.getElementById('re_pw_error').innerText = '';
+
+  if (region == 'none') {
+    document.getElementById('region_error').innerText = '지역을 선택하세요';
+    isValid = false;
+  } else document.getElementById('region_error').innerText = '';
+
+  if (woman === false && man === false) {
+    document.getElementById('gender_error').innerText = '성별을 선택하세요';
+    isValid = false;
+  } else document.getElementById('gender_error').innerText = '';
+
+  if (isValid === true) alert('회원가입을 축하합니다!');
 };

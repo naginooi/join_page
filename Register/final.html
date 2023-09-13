@@ -13,9 +13,9 @@
       <h2>회원가입</h2>
       <div class="info-input">
         <input type="email" class="email" placeholder="이메일을 입력해 주세요." />
-        <p class="error"></p>
-        <input type="text" class="name" placeholder="이름을 입력해 주세요." />
         <p class="error" id="email_error"></p>
+        <input type="text" class="name" placeholder="이름을 입력해 주세요." />
+        <p class="error" id="name_error"></p>
         <input type="password" class="password" placeholder="비밀번호를 입력해 주세요." />
         <p class="error" id="pw_error"></p>
         <input type="password" class="re-password" placeholder="비밀번호를 다시 입력해 주세요." />
@@ -52,7 +52,7 @@
         <label>남성</label>
       </div>
       <p class="error" id="gender_error"></p>
-      <button disabled class="register">가입하기</button>
+      <button disabled class="register" onclick="signUp()">가입하기</button>
     </div>
   </body>
 </html>
