@@ -17,6 +17,11 @@
   margin-bottom: 30px;
   color: #0068ff;
 }
+.container .error {
+  margin: 0 auto;
+  font-size: 0.8em;
+  color: red;
+}
 .container .info-input {
   display: flex;
   flex-direction: column;

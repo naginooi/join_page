@@ -13,10 +13,14 @@
   border-radius: 5px;
   box-shadow: 4px 4px 15px #aacdff;
 
-
   h2 {
     margin-bottom: 30px;
     color: #0068ff;
+  }
+  .error {
+    margin: 0 auto;
+    font-size: 0.8em;
+    color: red;
   }
 
   .info-input {

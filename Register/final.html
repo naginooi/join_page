@@ -12,61 +12,30 @@
     <div class="container">
       <h2>회원가입</h2>
       <div class="info-input">
-        <input
-          type="email"
-          class="email"
-          placeholder="이메일을 입력해 주세요."
-        />
+        <input type="email" class="email" placeholder="이메일을 입력해 주세요." />
+        <p class="error"></p>
         <input type="text" class="name" placeholder="이름을 입력해 주세요." />
-        <input
-          type="password"
-          class="password"
-          placeholder="비밀번호를 입력해 주세요."
-        />
-        <input
-          type="password"
-          class="re-password"
-          placeholder="비밀번호를 다시 입력해 주세요."
-        />
+        <p class="error" id="email_error"></p>
+        <input type="password" class="password" placeholder="비밀번호를 입력해 주세요." />
+        <p class="error" id="pw_error"></p>
+        <input type="password" class="re-password" placeholder="비밀번호를 다시 입력해 주세요." />
+        <p class="error" id="re_pw_error"></p>
       </div>
       <div class="phone-input">
-        <input
-          id="first-input"
-          type="text"
-          size="7"
-          maxlength="3"
-          onchange="firstPhone()"
-          onkeyup="onchange()"
-        />
+        <input id="first-input" type="text" size="7" maxlength="3" onchange="firstPhone()" onkeyup="onchange()" />
         -
-        <input
-          id="second-input"
-          type="text"
-          size="7"
-          maxlength="4"
-          onchange="secondPhone()"
-          onkeyup="onchange()"
-        />
+        <input id="second-input" type="text" size="7" maxlength="4" onchange="secondPhone()" onkeyup="onchange()" />
         -
-        <input
-          id="third-input"
-          type="text"
-          size="7"
-          maxlength="4"
-          onchange="thirdPhone()"
-          onkeyup="onchange()"
-        />
+        <input id="third-input" type="text" size="7" maxlength="4" onchange="thirdPhone()" onkeyup="onchange()" />
       </div>
       <div class="certificate">
         <div class="send">
           <span class="token">000000</span>
-          <button disabled class="sendBtn" onclick="makeToken()">
-            인증번호 전송
-          </button>
+          <button disabled class="sendBtn" onclick="makeToken()">인증번호 전송</button>
         </div>
         <div class="complete">
           <span class="timer">3:00</span>
-          <button class="completeBtn" disabled>인증 완료</button>
+          <button class="completeBtn" disabled onclick="completeBtn()">인증 확인</button>
         </div>
       </div>
       <select class="region" name="region">
@@ -75,12 +44,14 @@
         <option value="incheon">인천</option>
         <option value="kyeongki">경기</option>
       </select>
+      <p class="error" id="region_error"></p>
       <div class="gender-wrapper">
-        <input type="radio" name="gender" value="female" />
+        <input type="radio" name="gender" value="female" class="female" />
         <label>여성</label>
-        <input type="radio" name="gender" value="male" />
+        <input type="radio" name="gender" value="male" class="male" />
         <label>남성</label>
       </div>
+      <p class="error" id="gender_error"></p>
       <button disabled class="register">가입하기</button>
     </div>
   </body>
