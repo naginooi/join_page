@@ -9,13 +9,13 @@
   margin: 30px auto;
   padding: 100px;
   width: 540px;
-  border: 1px solid #aacdff;
+  border: 1px solid #efb495;
   border-radius: 5px;
-  box-shadow: 4px 4px 15px #aacdff;
+  box-shadow: 4px 4px 15px #efb495;
 }
 .container h2 {
   margin-bottom: 30px;
-  color: #0068ff;
+  color: #efb495;
 }
 .container .error {
   margin: 0 auto;
@@ -46,7 +46,7 @@
 .container input:focus,
 .container select:focus {
   outline: none;
-  border-color: #0068ff;
+  border-color: #efb495;
 }
 .container .certificate {
   display: flex;
@@ -69,15 +69,15 @@
 }
 .container .certificate .sendBtn {
   border: 1px solid #d2d2d2;
-  color: #0068ff;
+  color: #efb495;
 }
 .container .certificate .completeBtn {
-  border: 1px solid #0068ff;
+  border: 1px solid #efb495;
   color: #fff;
-  background-color: #0068ff;
+  background-color: #efb495;
 }
 .container .certificate span {
-  color: #0068ff;
+  color: #efb495;
 }
 .container .region {
   padding: 15px 10px;
@@ -98,9 +98,9 @@
   cursor: pointer;
   margin-top: 20px;
   padding: 20px 20px;
-  border: 1px solid #0068ff;
+  border: 1px solid #efb495;
   border-radius: 5px;
-  color: #0068ff;
+  color: #efb495;
   background-color: #fff;
 }
 .container .register:disabled {
